@@ -2,9 +2,9 @@
 
 echo "Starting Deployment..."
 
-scp target/my-app.jar user@server:/path/to/deploy/
+scp target/my-app.jar user@server:/deploy/
 
-ssh user@server "java -jar /path/to/deploy/my-app.jar &"
+ssh user@server "java -jar /my-app.jar &"
 
 echo "Deployment Complete."
 
